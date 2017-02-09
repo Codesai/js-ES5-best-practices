@@ -1,0 +1,1 @@
+Examples for a JS good practices course
