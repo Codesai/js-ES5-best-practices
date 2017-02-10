@@ -1,4 +1,4 @@
-/// Typical confusion: assuming this refers to the function itself
+/// Typical confusion: assuming this refers to the function's scope
 
 function foo() {
   var a = 2;
