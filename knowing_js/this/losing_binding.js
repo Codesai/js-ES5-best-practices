@@ -1,4 +1,4 @@
-// Loosing this binding
+// Losing this binding
 
 function foo() {
   console.log( this.a );
