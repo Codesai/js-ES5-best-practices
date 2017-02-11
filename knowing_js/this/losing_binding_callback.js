@@ -1,16 +1,16 @@
 // Losing this binding (callbacks)
 
 function foo() {
-    console.log( this.a );
+  console.log( this.a );
 }
 
 function doFoo(fn) {
-    fn();
+  fn();
 }
 
 var obj = {
-    a: 2,
-    foo: foo
+  a: 2,
+  foo: foo
 };
 
 var a = "oops, global";
