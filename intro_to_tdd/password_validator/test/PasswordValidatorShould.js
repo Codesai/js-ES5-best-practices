@@ -1,17 +1,17 @@
 'use strict';
 
-const PasswordValidator = require('../src/PasswordValidator.js');
-const should = require('chai').should();
+var PasswordValidator = require('../src/PasswordValidator.js');
+var should = require('chai').should();
 
-describe('PasswordValidator Should', () => {
+describe('PasswordValidator Should', function() {
 
-    let passwordValidator;
+    var passwordValidator;
 
-    beforeEach(() => {
+    beforeEach(function() {
         passwordValidator = PasswordValidator();
     });
 
-    it('fix me', () => {
+    it('fix me', function() {
         passwordValidator.validate("").should.equal(false);
     });
 

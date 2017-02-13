@@ -2,7 +2,7 @@
 
 function PasswordValidator() {
     return {
-        validate: (input) => true
+        validate: function(input) { return true; }
     };
 }
 
