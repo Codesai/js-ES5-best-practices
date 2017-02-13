@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var R = require('ramda');
 
 var getOdds = function(numbers) {
     var i,
@@ -49,3 +50,8 @@ filter(function(num) {
 _.filter([1, 2, 3, 4, 5, 6], function(num) {
     return num % 2 === 0;
 });
+
+// Using ramda
+R.filter(function(num) {
+    return num % 2 === 0;
+}, [1, 2, 3, 4, 5, 6]);
