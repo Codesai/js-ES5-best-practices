@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 function even(number) {
     return number % 2 === 0;
 }
@@ -54,6 +56,10 @@ any(even, [1, 2, 5]);
 
 any(odd, [2, 3, 4]);
 any(odd, [8, 2, 6]);
+
+// Using lodash
+_.some([1, 2, 3, 4], even);
+_.some([1, 2, 3, 4], odd);
 
 var ingredients = ["potatoes", "onion", "mushrooms", "ham"];
 
