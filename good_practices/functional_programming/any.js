@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var R = require('ramda');
 
 function even(number) {
     return number % 2 === 0;
@@ -60,6 +61,11 @@ any(odd, [8, 2, 6]);
 // Using lodash
 _.some([1, 2, 3, 4], even);
 _.some([1, 2, 3, 4], odd);
+
+// Using ramda
+R.any(even)([1, 2, 3, 4]);
+R.any(odd)([1, 2, 3, 4]);
+
 
 var ingredients = ["potatoes", "onion", "mushrooms", "ham"];
 
