@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var sum = function(numbers) {
     var res = 0,
         i;
@@ -48,6 +50,14 @@ myReduce(function(a, b) {
 myReduce(function(a, b) {
     return a * b;
 }, [1, 2, 3, 4], 1);
+
+// Using lodash
+_.reduce([1, 2, 3, 4],
+    function(a, b) {
+        return a + b;
+    }
+);
+
 
 var countNucleotides = function(strand) {
     var nucleotides = strand.split(''),
