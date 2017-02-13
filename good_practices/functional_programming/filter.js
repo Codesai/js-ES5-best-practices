@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var getOdds = function(numbers) {
     var i,
         res = [];
@@ -42,3 +44,8 @@ filter(function(num) {
 filter(function(num) {
     return num > 0;
 }, [-1, -2, -3, 4, -5, 6]);
+
+// Using lodash
+_.filter([1, 2, 3, 4, 5, 6], function(num) {
+    return num % 2 === 0;
+});
