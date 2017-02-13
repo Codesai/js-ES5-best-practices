@@ -14,7 +14,7 @@ var partiallyAppliedReduce = function(accumulator) {
             res = accumulator(res, values[i]);
         }
         return res;
-    }
+    };
 };
 
 var sum = partiallyAppliedReduce(function(a, b) {
@@ -84,25 +84,25 @@ var myReduce = function(accumulator, values, initialValue) {
         res = accumulator(res, values[i]);
     }
     return res;
-}
+};
 
 var sum = _und.partial(myReduce, function(a, b) {
     return a + b;
 });
 
-sum([1, 2, 3])
+sum([1, 2, 3]);
 
-sum([1, 2, 3], 5)
+sum([1, 2, 3], 5);
 
-sum([1, 2, 3], 10)
-
-_und.reduce([1, 2, 3], function(a, b) {
-    return a + b;
-})
+sum([1, 2, 3], 10);
 
 _und.reduce([1, 2, 3], function(a, b) {
     return a + b;
-}, 10)
+});
+
+_und.reduce([1, 2, 3], function(a, b) {
+    return a + b;
+}, 10);
 
 var reduceWith = function(fn, initialValue, coll) {
     return _und.reduce(coll, fn, initialValue);
@@ -112,4 +112,4 @@ var sum2 = _und.partial(reduceWith, function(a, b) {
     return a + b;
 }, 0);
 
-sum2([1, 2])
+sum2([1, 2]);

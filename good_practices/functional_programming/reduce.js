@@ -5,7 +5,7 @@ var sum = function(numbers) {
         res += numbers[i];
     }
     return res;
-}
+};
 
 var prod = function(numbers) {
     var res = 1,
@@ -14,7 +14,7 @@ var prod = function(numbers) {
         res *= numbers[i];
     }
     return res;
-}
+};
 
 var myReduce = function(accumulator, values, initialValue) {
     var res, i;
@@ -35,7 +35,7 @@ var myReduce = function(accumulator, values, initialValue) {
             i = 0;
         }
     }
-}
+};
 
 myReduce(function(a, b) {
     return a + b;
@@ -67,4 +67,4 @@ var countNucleotides = function(strand) {
     return frequenciesByNucleotides;
 };
 
-countNucleotides("GATTACA")
+countNucleotides("GATTACA");

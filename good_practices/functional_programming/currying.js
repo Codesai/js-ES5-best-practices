@@ -8,13 +8,13 @@ var curriedFilter = function(pred) {
             }
         }
         return res;
-    }
+    };
 };
 
 curriedFilter(function(num) {
         return num % 2 === 0;
     })
-    ([1, 2, 3, 4, 5, 6])
+    ([1, 2, 3, 4, 5, 6]);
 
 var getEvens = curriedFilter(function(num) {
     return num % 2 === 0;
@@ -45,9 +45,9 @@ var curriedReduce = function(combinator) {
                 res = combinator(res, values[i]);
             }
             return res;
-        }
-    }
-}
+        };
+    };
+};
 
 var sum = curriedReduce(function(a, b) {
     return a + b;

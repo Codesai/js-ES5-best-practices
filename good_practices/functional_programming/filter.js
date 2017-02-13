@@ -33,12 +33,12 @@ var filter = function(pred, values) {
 
 filter(function(num) {
     return num % 2 === 0;
-}, [1, 2, 3, 4, 5, 6])
+}, [1, 2, 3, 4, 5, 6]);
 
 filter(function(num) {
     return num % 2 === 1;
-}, [1, 2, 3, 4, 5, 6])
+}, [1, 2, 3, 4, 5, 6]);
 
 filter(function(num) {
     return num > 0;
-}, [-1, -2, -3, 4, -5, 6])
+}, [-1, -2, -3, 4, -5, 6]);

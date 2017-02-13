@@ -38,7 +38,7 @@ var leftPadWith = function(element) {
                 return Array(num - strData.length + 1).join(element.toString()) + strData;
             }
             return strData;
-        }
+        };
     };
 };
 
@@ -57,12 +57,12 @@ var leftPad = function() {
                             return Array(num - strData.length + 1).join(element.toString()) + strData;
                         }
                         return strData;
-                    }
+                    };
                 }
             };
         }
     };
-}
+};
 
 leftPad().using("*").until(5)("ko");
 
