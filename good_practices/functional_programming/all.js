@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var R = require('ramda');
 
 function even(number) {
     return number % 2 === 0;
@@ -40,3 +41,7 @@ allOdd([1, 2, 3, 4]);
 // Using lodash
 _.every([2, 4], even);
 _.every([1, 3], odd);
+
+// Using ramda
+R.all(even)([2, 4]);
+R.all(odd)([1, 3]);
