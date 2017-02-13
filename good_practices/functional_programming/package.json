@@ -1,0 +1,19 @@
+{
+  "name": "js-good-practices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codesai/js-good-practices.git"
+  },
+  "author": "Codesai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codesai/js-good-practices/issues"
+  },
+  "homepage": "https://github.com/Codesai/js-good-practices#readme",
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  }
+}
