@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var double = function(numbers) {
     var res = [],
         i;
@@ -5,7 +7,7 @@ var double = function(numbers) {
         res.push(2 * numbers[i]);
     }
     return res;
-}
+};
 
 var triple = function(numbers) {
     var res = [],
@@ -14,7 +16,7 @@ var triple = function(numbers) {
         res.push(3 * numbers[i]);
     }
     return res;
-}
+};
 
 var myMap = function(transform, values) {
     var res = [],
@@ -23,7 +25,7 @@ var myMap = function(transform, values) {
         res.push(transform(values[i]));
     }
     return res;
-}
+};
 
 myMap(
     function(num) {
@@ -41,4 +43,11 @@ myMap(
     function(num) {
         return 2 * num;
     }, [1, 2, 3, 4]
+);
+
+// Using lodash
+_.map([1, 2, 3, 4],
+    function(num) {
+        return 2 * num;
+    }
 );
