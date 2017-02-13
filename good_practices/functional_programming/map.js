@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var R = require('ramda');
 
 var double = function(numbers) {
     var res = [],
@@ -51,3 +52,8 @@ _.map([1, 2, 3, 4],
         return 2 * num;
     }
 );
+
+// Using ramda
+R.map(function(num) {
+    return num * 2;
+}, [1, 2, 3, 4, 5, 6]);
