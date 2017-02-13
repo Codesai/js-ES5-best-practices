@@ -1,17 +1,17 @@
 'use strict';
 
-const FizzBuzz = require('../src/FizzBuzz.js');
-const should = require('chai').should();
+var FizzBuzz = require('../src/FizzBuzz.js');
+var should = require('chai').should();
 
-describe('FizzBuzz Should', () => {
+describe('FizzBuzz Should', function() {
 
-    let fizzBuzz;
+    var fizzBuzz;
 
-    beforeEach(() => {
+    beforeEach(function() {
         fizzBuzz = FizzBuzz();
     });
 
-    it('fix me', () => {
+    it('fix me', function() {
         fizzBuzz.generate().should.equal('fix me');
     });
 

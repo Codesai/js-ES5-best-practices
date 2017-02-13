@@ -2,7 +2,7 @@
 
 function FizzBuzz() {
     return {
-        generate: () => ''
+        generate: function() { return ''; }
     };
 }
 
