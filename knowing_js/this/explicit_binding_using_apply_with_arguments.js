@@ -1,4 +1,4 @@
-// Explicit binding using call and passing more arguments
+// Explicit binding using apply and passing more arguments
 
 function print(num, random) {
   console.log(
@@ -12,7 +12,7 @@ var animals = [
 ];
 
 for (var i = 0; i < animals.length; i++) {
-  print.call(animals[i], i, Math.random());
+  print.apply(animals[i], [i, Math.random()]);
 }
 
 // Example modified from example in https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
