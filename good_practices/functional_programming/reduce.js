@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var R = require('ramda');
 
 var sum = function(numbers) {
     var res = 0,
@@ -57,6 +58,11 @@ _.reduce([1, 2, 3, 4],
         return a + b;
     }
 );
+
+// Using ramda
+R.reduce(function(a, b) {
+    return a + b;
+}, 0, [1, 2, 3, 4]);
 
 
 var countNucleotides = function(strand) {
