@@ -1,4 +1,4 @@
-// Explicitly hard-binding
+// Explicit hard-binding
 
 function foo() {
   console.log( this.a );
