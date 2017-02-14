@@ -40,9 +40,8 @@ console.log(
 );
 
 console.log(
-retrieveX.apply(this)
-});
-
+  retrieveX.apply(this)
+);
 
 var foo = function (fn) {
   return fn();
