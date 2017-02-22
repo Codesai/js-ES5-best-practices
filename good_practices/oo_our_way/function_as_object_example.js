@@ -12,12 +12,12 @@ function professor(name) {
   };
 
   function addClass(aClass) {
-    if (isAlreadyTeaching(aClass)) {
+    if (notAlreadyTeaching(aClass)) {
       classes.push(aClass);
     }
   }
 
-  function isAlreadyTeaching(aClass) {
-    return classes.includes(aClass);;
+  function notAlreadyTeaching(aClass) {
+    return !classes.includes(aClass);;
   }
 }
