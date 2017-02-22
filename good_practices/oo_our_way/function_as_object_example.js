@@ -18,6 +18,6 @@ function professor(name) {
   }
 
   function notAlreadyTeaching(aClass) {
-    return !classes.includes(aClass);;
+    return !classes.includes(aClass);
   }
 }
