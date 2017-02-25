@@ -9,7 +9,7 @@ function Person(name) {
 }
 
 // a property added to the prototype
-Person.prototype.getName = function() {
+Person.prototype.getName = function () {
   return this.name;
 }
 
