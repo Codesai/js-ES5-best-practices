@@ -1,8 +1,12 @@
-# Fizz Buzz Kata
+# Fractions Kata
 
 ### Description
 
-Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+Fractions must be immutable objects. A fraction should have a method
+that receives another fraction and returns the sum of both. Fractions
+must be reduced. There is a provided private function to calculate the
+greatest common divisor
+
 
 ### Configuration
 
