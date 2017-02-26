@@ -31,8 +31,6 @@ function Person(name) {
   };
 }
 
+// The same would work using call instead of apply
 greetings().hello.apply(person("koko"));
-
 greetings().hello.apply(new Person("koko"));
-
-// the same would work using call instead of apply
