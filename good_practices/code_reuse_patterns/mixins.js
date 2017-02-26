@@ -1,3 +1,5 @@
+// Mixins example
+
 function mix() {
   var arg, prop, val, child = {};
   for (arg = 0; arg < arguments.length; arg += 1) {
@@ -49,3 +51,6 @@ function Person(name) {
 }
 
 var personThatGreetsC = mix(new Person("koko"), greetings());
+
+// We modified the mix function from JS Patterns book,
+// so that it also works with objects using the Function as Object pattern
