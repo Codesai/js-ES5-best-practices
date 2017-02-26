@@ -44,6 +44,10 @@ function person(name) {
 
 var personThatGreetsFP = mix(person("koko"), greetings());
 
+function personThatGreets(name) {
+    return mix(person(name), greetings());
+}
+
 function Person(name) {
   this.name = function () {
     return name;
