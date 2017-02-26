@@ -1,3 +1,5 @@
+// Example of composition using Function as Object pattern
+
 function cat(name) {
   function meow() {
     return "meoooow!";
