@@ -5,7 +5,7 @@ function cat(name) {
     return "meoooow!";
   }
 
-  function fleet() {
+  function flee() {
     return "running";
   }
 
@@ -14,7 +14,7 @@ function cat(name) {
     name: function () {
       return name;
     },
-    fleet: fleet
+    flee: flee
   };
 }
 
@@ -31,7 +31,7 @@ function flyingCat(name) {
     return superMeow() + "... from high above";
   }
 
-  theCat.fleet = function() { // <- overriding method
+  theCat.flee = function() { // <- overriding method
     return "flying";
   }
 
