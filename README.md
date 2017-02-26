@@ -1,1 +1,1 @@
-Examples for a JS good practices course
+Examples for a ES5 JS best practices course.
