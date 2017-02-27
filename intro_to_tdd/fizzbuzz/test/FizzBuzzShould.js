@@ -1,8 +1,5 @@
 'use strict';
 
-var FizzBuzz = require('../src/FizzBuzz.js');
-var should = require('chai').should();
-
 describe('FizzBuzz Should', function() {
 
     var fizzBuzz;
@@ -12,7 +9,7 @@ describe('FizzBuzz Should', function() {
     });
 
     it('fix me', function() {
-        fizzBuzz.generate().should.equal('fix me');
+        expect('fizzBuzz.generate()').toBe('fix me');
     });
 
 });

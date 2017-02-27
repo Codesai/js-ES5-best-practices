@@ -5,5 +5,3 @@ function FizzBuzz() {
         generate: function() { return ''; }
     };
 }
-
-module.exports = FizzBuzz;
