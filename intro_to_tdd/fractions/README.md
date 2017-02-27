@@ -10,6 +10,8 @@ greatest common divisor
 
 ### Configuration
 
-- Install nodejs - [Nodejs docs](https://docs.npmjs.com/getting-started/installing-node)
-- `npm install` to update the dependencies
-- `npm test` to run the tests
+- Open the SpecRunner.html file in Google Chrome.
+- You will find a test failing.
+- Change the code to make it pass according to the kata description.
+- Reload the page on Google Chrome to run the test suite again.
+- Have fun!

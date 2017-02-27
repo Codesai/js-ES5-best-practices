@@ -11,5 +11,3 @@ function Fraction() {
         add: function(fraction) { }
     };
 }
-
-module.exports = Fraction;

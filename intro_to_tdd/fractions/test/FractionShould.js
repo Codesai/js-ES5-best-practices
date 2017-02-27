@@ -1,8 +1,5 @@
 'use strict';
 
-var Fraction = require('../src/Fraction.js');
-var should = require('chai').should();
-
 describe('Fraction Should', function() {
 
     var fraction;
@@ -12,7 +9,7 @@ describe('Fraction Should', function() {
     });
 
     it('add', function() {
-        fraction.add(Fraction()).should.equal('fix me');
+        expect(fraction.add(Fraction())).toBe('fix me');
     });
 
 });
