@@ -5,5 +5,3 @@ function PasswordValidator() {
         validate: function(input) { return true; }
     };
 }
-
-module.exports = PasswordValidator;

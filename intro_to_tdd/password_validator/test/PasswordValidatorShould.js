@@ -1,8 +1,5 @@
 'use strict';
 
-var PasswordValidator = require('../src/PasswordValidator.js');
-var should = require('chai').should();
-
 describe('PasswordValidator Should', function() {
 
     var passwordValidator;
@@ -12,7 +9,7 @@ describe('PasswordValidator Should', function() {
     });
 
     it('fix me', function() {
-        passwordValidator.validate("").should.equal(false);
+        expect(passwordValidator.validate("")).toBe(false);
     });
 
 });
