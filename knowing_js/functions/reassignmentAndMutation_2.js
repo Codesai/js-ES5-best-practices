@@ -13,3 +13,11 @@
     })();
     return age;
 })();
+
+(function() {
+    var age = 49;
+    (function(age) {
+        age = 50;
+    })(age);
+    return age;
+})();
