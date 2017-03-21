@@ -43,7 +43,7 @@ myMap(
 [1, 2, 3, 4].map(
     function(num) {
         return 2 * num;
-    }, [1, 2, 3, 4]
+    }
 );
 
 // Using lodash
